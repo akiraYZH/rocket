@@ -1,3 +1,4 @@
+//JQuery
 let oRocket =$('.rocket');
 let oReset = $('#reset_rocket');
 let scroll_timer = null;

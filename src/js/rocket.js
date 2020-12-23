@@ -1,19 +1,12 @@
+// native JS
 let oRocket = document.querySelector('.rocket');
 let oBody = document.querySelector('body');
 let oReset = document.querySelector('#reset_rocket');
 let scroll_timer = null;
 
 oRocket.style.transform = ' scale(0)';
-
-
-
 oReset.addEventListener('click', clickReset);
-
-
 window.addEventListener('scroll', showRocket);
-
-
-
 oRocket.addEventListener('click', clickRocket);
 
 function clickReset() {
@@ -56,9 +49,7 @@ function scrollTo(target, time) {
     console.log('start');
 
     scroll_timer = setInterval(() => {
-
-        console.log(++count);
-
+        ++count;
         scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         let distance = target - scrollTop;
 
@@ -77,8 +68,6 @@ function scrollTo(target, time) {
             }
 
         } else {
-            console.log('end123');
-
             if (document.documentElement.scrollTop) {
                 document.documentElement.scrollTop += distance;
             } else {
