@@ -82,7 +82,6 @@ gulp.task('pro_js', function () {
 		.pipe(gulp.dest(jsTargetDir));
 });
 
-//console.log(imgSourceDir+'**/*');
 /****************子任务：压缩图片，添加MD5后缀，并生成json对应文件************/
 gulp.task('pro_img', function () {
 	return gulp.src(imgSourceDir+'**/*')
